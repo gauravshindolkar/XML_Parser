@@ -1,7 +1,8 @@
 #!/usr/bin/python
 from xml.dom import minidomtry:  
 xmldoc = minidom.parse('/tmp/GauravShindolkar/resources.xml') 
-print ("\033[1;33;40m \033[2;37;40m \n\n Namebinding at CELL Level \033[0;37;40m \n\n") document = xmldoc.getElementsByTagName("xmi:XMI")[0]
+print ("\033[1;33;40m \033[2;37;40m \n\n Resources.xml at CELL Level \033[0;37;40m \n\n")
+document = xmldoc.getElementsByTagName("xmi:XMI")[0]
  #JMSProvider = document.getElementsByTagName("resources.jms:JMSProvider") factories = JMSProvider.getElementsByTagName("factories")
  for factory in factories:
     try:
